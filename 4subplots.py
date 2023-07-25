@@ -36,7 +36,7 @@ nse4 = np.linspace(0,0,len(t))                # white noise 4
 # Four signals with a coherent part at frequency (f) and a random part (nse)
 s1 = np.sin(a * np.pi * f * t) + nse1
 s2 = np.cos(a * np.pi * f * t) + nse2
-s3 = np.sin(a * np.pi * f * t) + nse3
+s3 = np.sin(a * np.pi * f * t) + nse3         
 s4 = np.cos(a * np.pi * f * t) + nse4
 
 
@@ -62,7 +62,7 @@ ax2.set_xlim(0,1)
 ax2.set_ylim(-4,4)
 ax2.set_xlabel('variable b')
 ax2.set_ylabel('B (b)')
-ax2.set_title('sublot 2')
+ax2.set_title('sublot 2')                      
 ax2.grid(True)
 
 # Features of the 3rd chart
@@ -86,5 +86,5 @@ ax4.set_title('sublot 4')
 ax4.grid(True)
 
 
-plt.tight_layout()          # Adjust the padding between and around subplots
-plt.show()
+plt.tight_layout()                              # adjust the padding between and around subplots
+plt.savefig('4_Subplots',dpi=1000)              # save the figure
